@@ -10,6 +10,6 @@ require "restpack_account_service/version"
 require_rel "restpack_account_service/models"
 require_rel "restpack_account_service/serializers"
 
-# require "restpack_account_service/tasks"
+require "restpack_account_service/tasks"
 
 require_rel "restpack_account_service/commands"
