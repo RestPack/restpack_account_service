@@ -25,29 +25,15 @@ describe RestPack::Account::Service::Commands::Account::Get do
     end
   end
 
-  # context 'with invalid :id' do
-  #   let(:params) { {
-  #     id: 142857,
-  #     application_id: @group.application_id
-  #   }}
+  context 'with invalid :id' do
+    let(:params) { {
+      id: 142857
+    }}
 
-  #   it 'is :not_found' do
-  #     response.success?.should == false
-  #     response.result.should == {}
-  #     response.status.should == :not_found
-  #   end
-  # end
-
-  # context 'with invalid :application_id' do
-  #   let(:params) { {
-  #     id: @group.id,
-  #     application_id: 142857
-  #   }}
-
-  #   it 'is :not_found' do
-  #     response.success?.should == false
-  #     response.result.should == {}
-  #     response.status.should == :not_found
-  #   end
-  # end
+    it 'is :not_found' do
+      response.success?.should == false
+      response.result.should == {}
+      response.status.should == :not_found
+    end
+  end
 end
