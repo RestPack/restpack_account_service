@@ -5,6 +5,6 @@ module RestPack::Account::Service::Serializers
     self.model_class = RestPack::Account::Service::Models::Account
     self.key = :accounts
 
-    attributes :id, :created_by, :name, :href
+    attributes :id, :application_id, :created_by, :name, :href
   end
 end

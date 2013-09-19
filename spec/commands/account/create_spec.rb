@@ -9,6 +9,7 @@ describe RestPack::Account::Service::Commands::Account::Create do
 
     context 'with valid params' do
       let(:account) { {
+        application_id: 111,
         created_by: 234,
         name: 'My New Group'
       } }
@@ -22,6 +23,7 @@ describe RestPack::Account::Service::Commands::Account::Create do
         accounts = response.result[:accounts]
         accounts.length.should == 1
 
+        accounts.first[:application_id].should == 111
         accounts.first[:created_by].should == 234
         accounts.first[:name].should == "My New Group"
       end

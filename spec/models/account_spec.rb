@@ -1,6 +1,7 @@
 require 'spec_helper'
 
 describe RestPack::Account::Service::Models::Account do
+  it { should validate_presence_of(:application_id) }
   it { should validate_presence_of(:created_by) }
   it { should validate_presence_of(:name) }
 

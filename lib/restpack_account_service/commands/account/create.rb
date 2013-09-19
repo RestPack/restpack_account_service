@@ -5,6 +5,7 @@ module RestPack::Account::Service::Commands
         array :accounts do
           hash do
             required do
+              integer :application_id
               integer :created_by
               string :name
             end
