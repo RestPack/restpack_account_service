@@ -6,5 +6,7 @@ module RestPack::Account::Service::Serializers
     self.key = :accounts
 
     attributes :id, :application_id, :created_by, :name, :href
+
+    can_filter_by :application_id
   end
 end
