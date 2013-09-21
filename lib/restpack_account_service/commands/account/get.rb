@@ -7,11 +7,9 @@ module RestPack::Account::Service::Commands
       end
 
       def execute
-        scope = RestPack::Account::Service::Models::Account.all
+        scope = Models::Account.all
         scope = scope.where(application_id: application_id)
-        result = RestPack::Account::Service::Serializers::AccountSerializer.resource(
-          inputs, scope
-        )
+        result = Serializers::Account.resource(inputs, scope)
 
         if result[:accounts].empty?
           status :not_found

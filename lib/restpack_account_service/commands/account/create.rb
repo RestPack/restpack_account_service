@@ -14,8 +14,8 @@ module RestPack::Account::Service::Commands
       end
 
       def execute
-        accounts = RestPack::Account::Service::Models::Account.create!(inputs[:accounts])
-        RestPack::Account::Service::Serializers::AccountSerializer.serialize(accounts)
+        accounts = Models::Account.create!(inputs[:accounts])
+        Serializers::Account.serialize(accounts)
       end
     end
   end

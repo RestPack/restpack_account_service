@@ -1,6 +1,6 @@
 require_relative '../../spec_helper'
 
-describe RestPack::Account::Service::Commands::Account::Create do
+describe Commands::Account::Create do
   #TODO: GJ: validate array
   # is_required :created_by, :name
 
