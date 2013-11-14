@@ -1,8 +1,8 @@
-module RestPack::Account::Service::Serializers
+module Serializers::Accounts
   class Account
     include RestPack::Serializer
 
-    self.model_class = Models::Account
+    self.model_class = Models::Accounts::Account
     self.key = :accounts
 
     attributes :id, :application_id, :created_by, :name, :href

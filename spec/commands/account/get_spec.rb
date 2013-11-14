@@ -1,6 +1,6 @@
-require_relative '../../spec_helper'
+require 'spec_helper'
 
-describe Commands::Account::Get do
+describe Commands::Accounts::Account::Get do
   is_required :id, :application_id
 
   let(:response) { subject.class.run(params) }
