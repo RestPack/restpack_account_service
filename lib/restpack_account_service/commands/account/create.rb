@@ -1,4 +1,4 @@
-module Commands::Accounts::Account
+module Account::Commands::Account
   class Create < RestPack::Service::Commands::Create
     required do
       array :accounts do

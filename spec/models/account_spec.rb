@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Models::Accounts::Account do
+describe Account::Models::Account do
   it { should validate_presence_of(:application_id) }
   it { should validate_presence_of(:created_by) }
   it { should validate_presence_of(:name) }

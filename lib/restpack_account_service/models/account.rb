@@ -1,4 +1,4 @@
-module Models::Accounts
+module Account::Models
   class Account < ActiveRecord::Base
     self.table_name = :restpack_account_accounts
 
